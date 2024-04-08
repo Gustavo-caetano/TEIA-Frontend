@@ -76,6 +76,7 @@ export class ChatGPTApi implements LLMApi {
 
     console.log("[Proxy Endpoint] ", baseUrl, path);
 
+    baseUrl = 'https://secretar-ia.guugascode.site'
     return [baseUrl, path].join("/");
   }
 
@@ -127,10 +128,12 @@ export class ChatGPTApi implements LLMApi {
     options.onController?.(controller);
 
     try {
-      const chatPath = this.path(OpenaiPath.ChatPath);
+      const chatPath = this.path("question");
       const chatPayload = {
         method: "POST",
-        body: JSON.stringify(requestPayload),
+        body: JSON.stringify({
+          question: messages[0].content
+        }),
         signal: controller.signal,
         headers: getHeaders(),
       };
@@ -195,11 +198,15 @@ export class ChatGPTApi implements LLMApi {
               return finish();
             }
 
+            if (contentType?.startsWith("application/json")) {
+              const jsonText = await res.clone().json();
+              responseText = jsonText.response;
+              console.log(responseText)
+              return finish();
+            }
+
             if (
               !res.ok ||
-              !res.headers
-                .get("content-type")
-                ?.startsWith(EventStreamContentType) ||
               res.status !== 200
             ) {
               const responseTexts = [responseText];

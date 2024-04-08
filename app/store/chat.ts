@@ -330,7 +330,7 @@ export const useChatStore = createPersistStore(
 
         // get recent messages
         const recentMessages = get().getMessagesWithMemory();
-        const sendMessages = recentMessages.concat(userMessage);
+        const sendMessages = userMessage;
         const messageIndex = get().currentSession().messages.length + 1;
 
         // save user's and bot's message
@@ -354,7 +354,7 @@ export const useChatStore = createPersistStore(
 
         // make request
         api.llm.chat({
-          messages: sendMessages,
+          messages: [sendMessages],
           config: { ...modelConfig, stream: true },
           onUpdate(message) {
             botMessage.streaming = true;
@@ -368,6 +368,7 @@ export const useChatStore = createPersistStore(
           onFinish(message) {
             botMessage.streaming = false;
             if (message) {
+              console.log(message)
               botMessage.content = message;
               get().onNewMessage(botMessage);
             }
@@ -404,7 +405,7 @@ export const useChatStore = createPersistStore(
           },
         });
       },
-
+      
       getMemoryPrompt() {
         const session = get().currentSession();
 

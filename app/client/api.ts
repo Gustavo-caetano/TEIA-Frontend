@@ -69,7 +69,7 @@ export abstract class LLMApi {
   abstract models(): Promise<LLMModel[]>;
 }
 
-type ProviderName = "openai" | "azure" | "claude" | "palm";
+type ProviderName = "openai" | "azure" | "claude" | "palm" | "secretarIa";
 
 interface Model {
   name: string;
@@ -95,6 +95,10 @@ export class ClientApi {
 
   constructor(provider: ModelProvider = ModelProvider.GPT) {
     if (provider === ModelProvider.GeminiPro) {
+      this.llm = new GeminiProApi();
+      return;
+    }
+    else if(provider === ModelProvider.secretarIa) {
       this.llm = new GeminiProApi();
       return;
     }
@@ -153,33 +157,33 @@ export function getHeaders() {
     "Content-Type": "application/json",
     Accept: "application/json",
   };
-  const modelConfig = useChatStore.getState().currentSession().mask.modelConfig;
-  const isGoogle = modelConfig.model.startsWith("gemini");
-  const isAzure = accessStore.provider === ServiceProvider.Azure;
-  const authHeader = isAzure ? "api-key" : "Authorization";
-  const apiKey = isGoogle
-    ? accessStore.googleApiKey
-    : isAzure
-    ? accessStore.azureApiKey
-    : accessStore.openaiApiKey;
-  const clientConfig = getClientConfig();
-  const makeBearer = (s: string) => `${isAzure ? "" : "Bearer "}${s.trim()}`;
-  const validString = (x: string) => x && x.length > 0;
+  // const modelConfig = useChatStore.getState().currentSession().mask.modelConfig;
+  // const isGoogle = modelConfig.model.startsWith("gemini");
+  // const isAzure = accessStore.provider === ServiceProvider.Azure;
+  // const authHeader = isAzure ? "api-key" : "Authorization";
+  // const apiKey = isGoogle
+  //   ? accessStore.googleApiKey
+  //   : isAzure
+  //   ? accessStore.azureApiKey
+  //   : accessStore.openaiApiKey;
+  // const clientConfig = getClientConfig();
+  // const makeBearer = (s: string) => `${isAzure ? "" : "Bearer "}${s.trim()}`;
+  // const validString = (x: string) => x && x.length > 0;
 
-  // when using google api in app, not set auth header
-  if (!(isGoogle && clientConfig?.isApp)) {
-    // use user's api key first
-    if (validString(apiKey)) {
-      headers[authHeader] = makeBearer(apiKey);
-    } else if (
-      accessStore.enabledAccessControl() &&
-      validString(accessStore.accessCode)
-    ) {
-      headers[authHeader] = makeBearer(
-        ACCESS_CODE_PREFIX + accessStore.accessCode,
-      );
-    }
-  }
+  // // when using google api in app, not set auth header
+  // if (!(isGoogle && clientConfig?.isApp)) {
+  //   // use user's api key first
+  //   if (validString(apiKey)) {
+  //     headers[authHeader] = makeBearer(apiKey);
+  //   } else if (
+  //     accessStore.enabledAccessControl() &&
+  //     validString(accessStore.accessCode)
+  //   ) {
+  //     headers[authHeader] = makeBearer(
+  //       ACCESS_CODE_PREFIX + accessStore.accessCode,
+  //     );
+  //   }
+  // }
 
   return headers;
 }

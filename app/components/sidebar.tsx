@@ -12,6 +12,7 @@ import DeleteIcon from "../icons/delete.svg";
 import MaskIcon from "../icons/mask.svg";
 import PluginIcon from "../icons/plugin.svg";
 import DragIcon from "../icons/drag.svg";
+import UFSIcon from "../../public/ufs_monograma_positivo.png"
 
 import Locale from "../locales";
 
@@ -159,9 +160,9 @@ export function SideBar(props: { className?: string }) {
         </div>
         <div className={styles["sidebar-sub-title"]}>
         </div>
-        <div className={styles["sidebar-logo"] + " no-dark"}>
-          <ChatGptIcon />
-        </div>
+        <img src="/ufs_monograma_positivo.png" width={60} height={50} className={styles["sidebar-logo"] + " no-dark"}>
+          
+        </img>
       </div>
 
 

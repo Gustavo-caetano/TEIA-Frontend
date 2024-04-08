@@ -25,7 +25,7 @@ export const DEFAULT_MASK_STATE = {
 
 export type MaskState = typeof DEFAULT_MASK_STATE;
 
-export const DEFAULT_MASK_AVATAR = "gpt-bot";
+export const DEFAULT_MASK_AVATAR = "secretar-ia";
 export const createEmptyMask = () =>
   ({
     id: nanoid(),
