@@ -1,8 +1,0 @@
-{
-  "/api/config/route": "app/api/config/route.js",
-  "/api/google/[...path]/route": "app/api/google/[...path]/route.js",
-  "/api/openai/[...path]/route": "app/api/openai/[...path]/route.js",
-  "/api/webdav/[...path]/route": "app/api/webdav/[...path]/route.js",
-  "/api/upstash/[action]/[...key]/route": "app/api/upstash/[action]/[...key]/route.js",
-  "/page": "app/page.js"
-}
