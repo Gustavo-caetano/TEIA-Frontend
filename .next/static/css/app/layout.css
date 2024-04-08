@@ -1,0 +1,337 @@
+/*!****************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[12].use[3]!./src/styles/App.css ***!
+  \****************************************************************************************************************************************************************************************************************************************************************/
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap');
+
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+option {
+  color: black;
+}
+
+/*!********************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[12].use[3]!./src/styles/Contact.css ***!
+  \********************************************************************************************************************************************************************************************************************************************************************/
+form {
+    width: 100%;
+}
+/*!********************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[12].use[3]!./src/styles/Plugins.css ***!
+  \********************************************************************************************************************************************************************************************************************************************************************/
+/* React Kanban */
+body.chakra-ui-light .react-kanban-column {
+  background-color: #fff; /* Gray/Gray-100 */
+  box-shadow: 14px 17px 40px 4px rgba(112, 144, 176, 0.08);
+  border-radius: 30px;
+}
+body.chakra-ui-dark .react-kanban-column {
+  background-color: #111c44; /* Gray/Gray-100 */
+  border-radius: 30px;
+}
+.react-kanban-column {
+  width: 500px;
+}
+.react-kanban-card-adder-form {
+  width: 100%;
+  border-radius: 15px;
+}
+.react-kanban-card-adder-button {
+  display: none;
+  border-radius: 15px;
+}
+/* Full Calendar */
+a.fc-daygrid-day-number {
+  width: 100%;
+  text-align: center;
+}
+a.fc-daygrid-day-number {
+  width: 100%;
+  text-align: center;
+}
+a.fc-daygrid-day-number {
+  width: 100%;
+  text-align: center;
+}
+div.fc-daygrid-event-harness {
+  top: unset;
+}
+.fc-daygrid-event-harness .fc-daygrid-event-harness-abs {
+  top: 0px;
+  bottom: unset;
+}
+.fc-daygrid-block-event .fc-event-title {
+  font-weight: 500;
+}
+.fc-daygrid-event {
+  border-radius: 10px !important;
+  height: 44px;
+  display: flex !important;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+}
+.fc-daygrid-event .fc-event-main {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+body.chakra-ui-dark .fc-theme-standard td {
+  border-color: #ffffff1a !important;
+}
+
+.fc .fc-scrollgrid-section-header > *,
+.fc .fc-scrollgrid-section-footer > * {
+  border-right: 0px !important;
+}
+.fc-theme-standard .fc-scrollgrid {
+  border: 1px solid #e0e5f2 !important;
+  border-radius: 10px;
+}
+body.chakra-ui-dark .fc-theme-standard .fc-scrollgrid {
+  border-color: #ffffff1a !important;
+}
+
+body.chakra-ui-light .fc-col-header-cell.fc-day.fc-day-mon {
+  border-right: 0px;
+  border-left: 0px;
+}
+body.chakra-ui-dark .fc-col-header-cell.fc-day.fc-day-mon {
+  border-right: 0px;
+  border-left: 0px;
+  border-color: #ffffff1a;
+}
+
+body.chakra-ui-light .fc-col-header-cell.fc-day.fc-day-tue {
+  border-left: 0px;
+  border-right: 0px;
+}
+body.chakra-ui-dark .fc-col-header-cell.fc-day.fc-day-tue {
+  border-left: 0px;
+  border-right: 0px;
+  border-color: #ffffff1a;
+}
+
+body.chakra-ui-light .fc-col-header-cell.fc-day.fc-day-wed {
+  border-right: 0px;
+  border-left: 0px;
+}
+body.chakra-ui-dark .fc-col-header-cell.fc-day.fc-day-wed {
+  border-right: 0px;
+  border-left: 0px;
+  border-color: #ffffff1a;
+}
+
+body.chakra-ui-light .fc-col-header-cell.fc-day.fc-day-thu {
+  border-left: 0px;
+  border-right: 0px;
+}
+body.chakra-ui-dark .fc-col-header-cell.fc-day.fc-day-thu {
+  border-left: 0px;
+  border-right: 0px;
+  border-color: #ffffff1a;
+}
+
+body.chakra-ui-light .fc-col-header-cell.fc-day.fc-day-fri {
+  border-right: 0px;
+  border-left: 0px;
+}
+body.chakra-ui-dark .fc-col-header-cell.fc-day.fc-day-fri {
+  border-right: 0px;
+  border-left: 0px;
+  border-color: #ffffff1a;
+}
+
+body.chakra-ui-light .fc-col-header-cell.fc-day.fc-day-sat {
+  border-left: 0px;
+  border-right: 0px;
+}
+body.chakra-ui-dark .fc-col-header-cell.fc-day.fc-day-sat {
+  border-left: 0px;
+  border-right: 0px;
+  border-color: #ffffff1a;
+}
+
+body.chakra-ui-light .fc-col-header-cell.fc-day.fc-day-sun {
+  border-left: 0px;
+  border-right: 0px;
+}
+body.chakra-ui-dark .fc-col-header-cell.fc-day.fc-day-sun {
+  border-left: 0px;
+  border-right: 0px;
+  border-color: #ffffff1a;
+}
+
+body.chakra-ui-light .fc-scrollgrid.fc-scrollgrid-liquid > td {
+  border: 0px;
+}
+body.chakra-ui-dark .fc-scrollgrid.fc-scrollgrid-liquid > td {
+  border: 0px;
+  border-color: #ffffff1a;
+}
+
+.fc .fc-scrollgrid-section > td {
+  border: 0;
+}
+
+/*!*************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[12].use[3]!./src/styles/MiniCalendar.css ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************/
+/* LIGHT MODE + GENERAL */
+
+.react-calendar {
+  border: none !important;
+  background-color: transparent !important;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+.react-calendar__navigation__prev2-button {
+  display: none;
+}
+.react-calendar__navigation__next2-button {
+  display: none;
+}
+.react-calendar__navigation {
+  align-items: center;
+}
+abbr[title] {
+  border-bottom: none;
+  -webkit-text-decoration: unset;
+  text-decoration: unset;
+  -webkit-text-decoration: unset;
+  -webkit-text-decoration: unset;
+  text-decoration: unset !important;
+}
+.react-calendar__navigation__prev-button {
+  background-color: #4318ff !important;
+  border-radius: 10px;
+  min-width: 34px !important;
+  height: 34px !important;
+  color: white;
+}
+.react-calendar__navigation__next-button {
+  background-color: #4318ff !important;
+  border-radius: 10px;
+  min-width: 34px !important;
+  width: 34px !important;
+  height: 34px !important;
+  color: white;
+}
+.react-calendar__navigation__label {
+  font-weight: 700 !important;
+  font-size: 18px;
+}
+.react-calendar__navigation__label:hover,
+.react-calendar__navigation__label:focus {
+  background-color: unset !important;
+  border-radius: 10px;
+}
+.react-calendar__tile {
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px !important;
+  height: 34px !important;
+  color: #1b2559;
+}
+.react-calendar__month-view__weekdays {
+  background-color: #f4f7fe;
+  border-radius: 10px;
+  margin-bottom: 6px;
+}
+.react-calendar__tile--now,
+.react-calendar__tile--now:enabled:hover,
+.react-calendar__tile--now:enabled:focus {
+  background-color: #f4f7fe;
+  border-radius: 10px;
+}
+.react-calendar__month-view__days__day--neighboringMonth {
+  color: #b0bbd5;
+}
+.react-calendar__tile--active,
+.react-calendar__tile--active:enabled:hover,
+.react-calendar__tile--active:enabled:focus {
+  background: #4318ff;
+  border-radius: 10px;
+  color: white;
+}
+.react-calendar__tile--range,
+.react-calendar__tile--range:enabled:hover,
+.react-calendar__tile--range:enabled:focus {
+  background: #f4f7fe;
+  color: #4318ff;
+  border-radius: 0px;
+}
+.react-calendar__tile--rangeStart,
+.react-calendar__tile--rangeStart:enabled:hover,
+.react-calendar__tile--rangeStart:enabled:focus {
+  background: #4318ff;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  color: white;
+}
+.react-calendar__tile--rangeEnd,
+.react-calendar__tile--rangeEnd:enabled:hover,
+.react-calendar__tile--rangeEnd:enabled:focus {
+  background: #4318ff;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  color: white;
+}
+
+/* DARK MODE */
+
+body.chakra-ui-dark .react-calendar {
+  border-radius: 30px;
+}
+body.chakra-ui-dark .react-calendar__navigation__prev-button {
+  background-color: #7551ff !important;
+}
+body.chakra-ui-dark .react-calendar__navigation__next-button {
+  background-color: #7551ff !important;
+  color: white;
+}
+body.chakra-ui-dark .react-calendar__tile {
+  color: white;
+}
+body.chakra-ui-dark .react-calendar__tile:enabled:hover,
+body.chakra-ui-dark .react-calendar__tile:enabled:focus {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+body.chakra-ui-dark .react-calendar__month-view__weekdays {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+body.chakra-ui-dark .react-calendar__tile--now,
+body.chakra-ui-dark .react-calendar__tile--now:enabled:hover,
+body.chakra-ui-dark .react-calendar__tile--now:enabled:focus {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+body.chakra-ui-dark .react-calendar__month-view__days__day--neighboringMonth {
+  color: #b0bbd5;
+}
+body.chakra-ui-dark .react-calendar__tile--active,
+body.chakra-ui-dark .react-calendar__tile--active:enabled:hover,
+body.chakra-ui-dark .react-calendar__tile--active:enabled:focus {
+  background: #7551ff;
+  color: white;
+}
+body.chakra-ui-dark .react-calendar__tile--range,
+body.chakra-ui-dark .react-calendar__tile--range:enabled:hover,
+body.chakra-ui-dark .react-calendar__tile--range:enabled:focus {
+  background: rgba(255, 255, 255, 0.1);
+  color: #7551ff;
+}
+body.chakra-ui-dark .react-calendar__tile--rangeStart,
+body.chakra-ui-dark .react-calendar__tile--rangeStart:enabled:hover,
+body.chakra-ui-dark .react-calendar__tile--rangeStart:enabled:focus {
+  background: #7551ff;
+  color: white;
+}
+body.chakra-ui-dark .react-calendar__tile--rangeEnd,
+body.chakra-ui-dark .react-calendar__tile--rangeEnd:enabled:hover,
+body.chakra-ui-dark .react-calendar__tile--rangeEnd:enabled:focus {
+  background: #7551ff;
+  color: white;
+}
+
