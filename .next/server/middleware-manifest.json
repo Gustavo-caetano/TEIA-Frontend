@@ -1,6 +1,64 @@
 {
   "sortedMiddleware": [],
   "middleware": {},
-  "functions": {},
+  "functions": {
+    "/api/config/route": {
+      "files": [
+        "server/middleware-build-manifest.js",
+        "server/middleware-react-loadable-manifest.js",
+        "server/next-font-manifest.js",
+        "server/edge-runtime-webpack.js",
+        "server/app/api/config/route.js"
+      ],
+      "name": "app/api/config/route",
+      "page": "/api/config/route",
+      "matchers": [
+        {
+          "regexp": "^/api/config$",
+          "originalSource": "/api/config"
+        }
+      ],
+      "wasm": [],
+      "assets": []
+    },
+    "/api/openai/[...path]/route": {
+      "files": [
+        "server/middleware-build-manifest.js",
+        "server/middleware-react-loadable-manifest.js",
+        "server/next-font-manifest.js",
+        "server/edge-runtime-webpack.js",
+        "server/app/api/openai/[...path]/route.js"
+      ],
+      "name": "app/api/openai/[...path]/route",
+      "page": "/api/openai/[...path]/route",
+      "matchers": [
+        {
+          "regexp": "^/api/openai/(?<path>.+?)$",
+          "originalSource": "/api/openai/[...path]"
+        }
+      ],
+      "wasm": [],
+      "assets": [],
+      "regions": [
+        "arn1",
+        "bom1",
+        "cdg1",
+        "cle1",
+        "cpt1",
+        "dub1",
+        "fra1",
+        "gru1",
+        "hnd1",
+        "iad1",
+        "icn1",
+        "kix1",
+        "lhr1",
+        "pdx1",
+        "sfo1",
+        "sin1",
+        "syd1"
+      ]
+    }
+  },
   "version": 2
 }
