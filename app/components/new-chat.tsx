@@ -86,10 +86,11 @@ export function NewChat() {
   const { state } = useLocation();
 
   const startChat = (mask?: Mask) => {
-    setTimeout(() => {
-      chatStore.newSession(mask);
-      navigate(Path.Chat);
-    }, 10);
+    // setTimeout(() => {
+    //   chatStore.newSession(mask);
+    //   navigate(Path.Chat);
+    // }, 10);
+    console.log(mask);
   };
 
   useCommand({

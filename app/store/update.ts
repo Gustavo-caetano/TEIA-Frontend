@@ -108,7 +108,7 @@ export const useUpdateStore = createPersistStore(
                         window.__TAURI__?.notification.sendNotification({
                           title: "NextChat",
                           body: `${Locale.Settings.Update.IsLatest}`,
-                          icon: `${ChatGptIcon.src}`,
+                          icon: "/secretario.png",
                           sound: "Default",
                         });
                       } else {
@@ -118,7 +118,7 @@ export const useUpdateStore = createPersistStore(
                         window.__TAURI__?.notification.sendNotification({
                           title: "NextChat",
                           body: updateMessage,
-                          icon: `${ChatGptIcon.src}`,
+                          icon: "/secretario.png",
                           sound: "Default",
                         });
                       }

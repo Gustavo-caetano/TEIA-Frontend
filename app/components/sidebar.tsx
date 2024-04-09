@@ -12,7 +12,6 @@ import DeleteIcon from "../icons/delete.svg";
 import MaskIcon from "../icons/mask.svg";
 import PluginIcon from "../icons/plugin.svg";
 import DragIcon from "../icons/drag.svg";
-import UFSIcon from "../../public/ufs_monograma_positivo.png"
 
 import Locale from "../locales";
 
@@ -146,23 +145,23 @@ export function SideBar(props: { className?: string }) {
 
   return (
     <div
-      className={`${styles.sidebar} ${props.className} ${
-        shouldNarrow && styles["narrow-sidebar"]
-      }`}
+      className={`${styles.sidebar} ${props.className} ${shouldNarrow && styles["narrow-sidebar"]
+        }`}
       style={{
         // #3016 disable transition on ios mobile screen
         transition: isMobileScreen && isIOSMobile ? "none" : undefined,
       }}
     >
       <div className={styles["sidebar-header"]} data-tauri-drag-region>
+        <div className="image-container">
+          <img src="/VAZADO.png" width="70" height="70" className="sidebar-logo no-dark" style={{marginRight: '6rem'}}  />
+          <img src="/ufs_monograma_positivo.png" width="70" height="70" className="sidebar-logo no-dark" />
+        </div>
         <div className={styles["sidebar-title"]} data-tauri-drag-region>
           Secretar-IA
         </div>
         <div className={styles["sidebar-sub-title"]}>
         </div>
-        <img src="/ufs_monograma_positivo.png" width={60} height={50} className={styles["sidebar-logo"] + " no-dark"}>
-          
-        </img>
       </div>
 
 
@@ -200,12 +199,8 @@ export function SideBar(props: { className?: string }) {
             icon={<AddIcon />}
             text={shouldNarrow ? undefined : Locale.Home.NewChat}
             onClick={() => {
-              if (config.dontShowMaskSplashScreen) {
-                chatStore.newSession();
-                navigate(Path.Chat);
-              } else {
-                navigate(Path.NewChat);
-              }
+              chatStore.newSession();
+              navigate(Path.Chat);
             }}
             shadow
           />

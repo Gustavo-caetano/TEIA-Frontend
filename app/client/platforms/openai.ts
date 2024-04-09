@@ -76,7 +76,8 @@ export class ChatGPTApi implements LLMApi {
 
     console.log("[Proxy Endpoint] ", baseUrl, path);
 
-    baseUrl = 'https://secretar-ia.guugascode.site'
+    // baseUrl = 'https://secretar-ia.guugascode.site'
+    baseUrl = 'http://localhost:3500'
     return [baseUrl, path].join("/");
   }
 

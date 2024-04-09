@@ -33,10 +33,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="pt-br">
       <head>
         <meta name="config" content={JSON.stringify(getClientConfig())} />
-        <link rel="manifest" href="/site.webmanifest"></link>
+        <link rel="icon" href="/ufs_vertical_positiva.png" />
         <script src="/serviceWorkerRegister.js" defer></script>
       </head>
       <body>
