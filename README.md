@@ -8,7 +8,7 @@ Projeto desenvolvido como parte da avaliação final na disciplina de Tópicos E
 **OBSERVAÇÃO:** este repositório corresponde apenas ao frontend da aplicação, para acessar as demais informações do projeto, acesse o repositório do backend clicando [aqui](https://github.com/Tibuh/TEIA).
 
 ### Acesse a aplicação:
-[Clique aqui para acessar a aplicação](https://6614b4340f62fa00085f2f8a--secretar-ia.netlify.app/).
+[Clique aqui para acessar a aplicação](https://6614b252fd23f900081c496c--secretar-ia.netlify.app/).
 
 ### Repositório do backend
 [Clique aqui para acessar o repositório do backend](https://github.com/Tibuh/TEIA).
